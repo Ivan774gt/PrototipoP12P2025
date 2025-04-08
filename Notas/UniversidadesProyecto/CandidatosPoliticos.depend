@@ -25,3 +25,13 @@
 1744130966 source:c:\users\deleo\onedrive\documentos\github\prototipop12p2025\candidatospoliticos\src\votacion.cpp
 	"Votacion.h"
 
+1744131399 source:c:\users\deleo\onedrive\documentos\github\prototipop12p2025\notas\universidadesproyecto\main.cpp
+	"Votacion.h"
+
+1744129658 c:\users\deleo\onedrive\documentos\github\prototipop12p2025\notas\universidadesproyecto\include\votacion.h
+	<iostream>
+	<iomanip>
+	<cstdlib>
+	<ctime>
+	<string>
+

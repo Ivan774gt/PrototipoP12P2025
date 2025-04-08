@@ -7,7 +7,7 @@ Votacion::Votacion(int numCandidatos) {
     totalVotos = new int[numCandidatos] {0};
 
     for (int i = 0; i < numCandidatos; i++) {
-        votos[i] = new int[5]{0};
+        votos[i] = new int[4]{0};
     }
 }
 
@@ -27,9 +27,9 @@ void Votacion::ingresarCandidatos() {
         getline(cin, candidatos[i]);
     }
 }
-
+//agrega las notas aleatorias a cada alumno
 void Votacion::simularVotacion() {
-    for (int j = 0; j < 5; j++) {
+    for (int j = 0; j < 4; j++) {
         int votosRestantes = 50;
         for (int i = 0; i < numCandidatos; i++) {
             if (i == numCandidatos - 1) {
@@ -38,16 +38,16 @@ void Votacion::simularVotacion() {
                 votos[i][j] = rand() % (votosRestantes - (numCandidatos - i - 1)) + 1;
                 votosRestantes -= votos[i][j];
             }
-            totalVotos[i] += votos[i][j];
+            totalVotos[i] += votos[i][j]/4;
         }
     }
 }
-
+//Muestra el total de las notas
 void Votacion::mostrarResultados() {
     cout << "\nTabla de notas:\n";
     imprimirLinea();
     cout << "| " << setw(12) << "Alumno" << " | ";
-    for (int j = 0; j < 5; j++) {
+    for (int j = 0; j < 4; j++) {
         cout << "Notas " << j + 1 << " | ";
     }
     cout << "Total  |\n";
@@ -55,13 +55,13 @@ void Votacion::mostrarResultados() {
 
     for (int i = 0; i < numCandidatos; i++) {
         cout << "| " << setw(12) << candidatos[i] << " | ";
-        for (int j = 0; j < 5; j++) {
+        for (int j = 0; j < 4; j++) {
             cout << setw(7) << votos[i][j] << " | ";
         }
         cout << setw(6) << totalVotos[i] << " |\n";
         imprimirLinea();
     }
-
+//muestra el alumno con mayor nota y con menor nota
     int maxVotos = totalVotos[0], minVotos = totalVotos[0];
     int ganador = 0, perdedor = 0;
 
@@ -81,6 +81,7 @@ void Votacion::mostrarResultados() {
 }
 
 
+//Divisiones de la tabla al ejecutar el programa
 void Votacion::imprimirLinea() {
     cout << "+--------------+---------+---------+---------+---------+---------+-------+\n";
 }

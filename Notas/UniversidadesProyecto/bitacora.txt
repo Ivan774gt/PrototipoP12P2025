@@ -1,0 +1,29 @@
+commit 8ff29bd44a6a7e2613fb1b7b7953e63a2dca07ad
+Author: Ivan774gt <deleonboris6@gmail.com>
+Date:   Tue Apr 8 10:51:33 2025 -0600
+
+    Se cambia el programa base
+
+commit 7dcdd76fb5166a2d9d2d74422d14729743cd4ba6
+Author: Ivan774gt <deleonboris6@gmail.com>
+Date:   Tue Apr 8 10:37:02 2025 -0600
+
+    Se agregan los archivos .h y .cpp
+
+commit d3d4030f9e139c34091619926108b23980ca61af
+Author: Ivan774gt <deleonboris6@gmail.com>
+Date:   Tue Apr 8 10:33:43 2025 -0600
+
+    se crea el proyecto con el codigo base
+
+commit 3592580501fb77b0b7bd8e527fff7c7251344a41
+Author: Ivan774gt <deleonboris6@gmail.com>
+Date:   Tue Apr 8 10:30:48 2025 -0600
+
+    Se agrega el archivo base
+
+commit 52210a210bf8b80319b0e9ef9258c6854475e481
+Author: Boris de Leon <50037610+Ivan774gt@users.noreply.github.com>
+Date:   Tue Apr 8 10:11:22 2025 -0600
+
+    Initial commit
