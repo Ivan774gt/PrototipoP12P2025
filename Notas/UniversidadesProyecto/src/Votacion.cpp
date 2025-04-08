@@ -50,7 +50,7 @@ void Votacion::mostrarResultados() {
     for (int j = 0; j < 4; j++) {
         cout << "Notas " << j + 1 << " | ";
     }
-    cout << "Total  |\n";
+    cout << "%  |\n";
     imprimirLinea();
 
     for (int i = 0; i < numCandidatos; i++) {
@@ -76,8 +76,8 @@ void Votacion::mostrarResultados() {
         }
     }
 
-    cout << "\nEl Alumno ganador es: " << candidatos[ganador] << " con " << maxVotos << " Notas.\n";
-    cout << "El candidato con menor Nota es: " << candidatos[perdedor] << " con " << minVotos << " Notas.\n";
+    cout << "\nEl Alumno ganador es: " << candidatos[ganador] << " con " << maxVotos << " Porciento.\n";
+    cout << "El candidato con menor Nota es: " << candidatos[perdedor] << " con " << minVotos << " Poriento.\n";
 }
 
 
